@@ -1,6 +1,6 @@
 
 
-resource "azurerm_resource_group" "main" {
+data "azurerm_resource_group" "main" {
   name     = "${var.resourceGroup}"
   location = "${var.region}"
 }
